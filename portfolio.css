@@ -1,0 +1,177 @@
+body,
+html,
+main {
+  height: 100%;
+}
+
+a:visited,
+a:hover,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+.noLinkColor {
+  color: black;
+}
+
+.cd-fixed-bg {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+.cd-fixed-bg.home {
+  background-image: url("http://davidbaindesign.com/DSC02076.JPG");
+}
+
+.cd-fixed-bg.about {
+  background-image: url(http://davidbaindesign.com/DSC02053.JPG);
+  background-color: black;
+  height: calc(100% - 50px);
+}
+
+.cd-fixed-bg.portfolio {
+  background-image: url("http://davidbaindesign.com/DSC01959.JPG");
+}
+
+.cd-fixed-bg.contact {
+  background-image: url("http://davidbaindesign.com/DSC01875.JPG");
+  background-color: black;
+}
+
+.brighten {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  overflow-y: auto;
+  font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+}
+
+.keul {
+  padding: 8px;
+  border-radius: 15px;
+  background: #111;
+  font-size: 18px;
+  color: gray;
+  font-family: Helvetica, Arial, sans-serif;
+  border: 3px solid gray;
+  box-shadow: 5px 5px black;
+}
+
+.keul:hover {
+  background-color: #119;
+  border: 3px solid white;
+  color: #fff;
+}
+
+.keul:active {
+  box-shadow: 3px 3px black;
+  -ms-transform: translate(2px, 2px);
+  color: #fff;
+  /* IE 9 */
+  -webkit-transform: translate(2px, 2px);
+  /*Safari */
+  transform: translate(2px, 2px);
+  background-color: #119;
+}
+
+.portPhoto {
+  -webkit-filter: brightness(100%);
+  /* Chrome, Safari, Opera */
+  filter: brightness(100%);
+}
+
+.portPhoto:hover {
+  transition: 0.5s;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  text-decoration: none;
+}
+
+.parentbox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.parentbox:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.vertCenter {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 99%;
+}
+
+.big {
+  font-size: 500%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.left {
+  text-align: left;
+  padding: 50px;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+  /* Chrome, Safari, Opera */
+  filter: drop-shadow(8px 8px 10px gray);
+}
+
+.footer {
+  background-color: black;
+  vertical-align: bottom;
+  color: gray;
+  width: 100%;
+  height: 48px;
+  padding: 17px;
+  display: block;
+  font-size: .7em;
+}
+
+@media(max-width:767px) {
+  .brighten {
+    padding-top: 10px;
+  }
+  .big {
+    font-size: 250%;
+  }
+  .right {
+    float: left;
+  }
+  ul.mobileButtons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.mobileButtons > li:last-child {
+    margin-bottom: 0;
+  }
+  .keul {
+    width: 100%;
+  }
+  .cd-fixed-bg.home,
+  .cd-fixed-bg.about,
+  .cd-fixed-bg.portfolio,
+  .cd-fixed-bg.contact {
+    height: auto;
+  }
+  .center {
+    padding: 15px;
+  }
+}
